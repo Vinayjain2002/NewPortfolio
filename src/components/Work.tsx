@@ -1,6 +1,10 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import projectEcommerce from "@/assets/project-ecommerce.png";
+import projectTravel from "@/assets/project-travel.png";
+import projectDashboard from "@/assets/project-dashboard.png";
+import projectChat from "@/assets/project-chat.png";
 
 const Work = () => {
   const projects = [
@@ -8,25 +12,25 @@ const Work = () => {
       title: "E-Commerce Platform",
       description: "Full-stack e-commerce solution with real-time inventory management and payment processing.",
       tags: ["React", "Node.js", "PostgreSQL", "Stripe"],
-      image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=600&h=400&fit=crop",
+      image: projectEcommerce,
     },
     {
       title: "Mobile Travel App",
       description: "Cross-platform travel application with booking system and real-time notifications.",
       tags: ["React Native", "TypeScript", "Firebase"],
-      image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=600&h=400&fit=crop",
+      image: projectTravel,
     },
     {
       title: "Dashboard Analytics",
       description: "Data visualization dashboard with interactive charts and real-time data updates.",
       tags: ["Next.js", "D3.js", "TailwindCSS"],
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+      image: projectDashboard,
     },
     {
       title: "AI Chat Application",
       description: "Real-time chat application with AI-powered response suggestions and sentiment analysis.",
       tags: ["React", "WebSocket", "OpenAI"],
-      image: "https://images.unsplash.com/photo-1587560699334-cc4ff634909a?w=600&h=400&fit=crop",
+      image: projectChat,
     },
   ];
 
