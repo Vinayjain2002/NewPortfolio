@@ -8,20 +8,26 @@ const Expertise = () => {
     {
       icon: Code2,
       title: "Software Development",
+      subtitle: "Full Stack Development",
       description:
-        "Experienced in both functional and OOP: JavaScript, TypeScript, Python, and modern frameworks.",
+        "Experienced in both functional and OOP: JavaScript, TypeScript, Python, and modern frameworks. Building scalable applications with clean architecture.",
+      skills: ["JavaScript", "TypeScript", "Python", "Node.js", "PostgreSQL"],
     },
     {
       icon: Palette,
-      title: "Frontend Dev React, NextJS",
+      title: "Frontend Development",
+      subtitle: "React, NextJS",
       description:
-        "Passionate about UI/UX. Over 5 years of development experience in HTML, CSS, JS, React and NextJS frameworks.",
+        "Passionate about UI/UX. Over 5 years of development experience in HTML, CSS, JS, React and NextJS frameworks. Creating responsive and accessible interfaces.",
+      skills: ["React", "Next.js", "TailwindCSS", "Framer Motion", "HTML/CSS"],
     },
     {
       icon: Smartphone,
       title: "Mobile Development",
+      subtitle: "Cross-Platform Apps",
       description:
-        "Skilled in developing hybrid mobile apps and cross-platform solutions using modern frameworks.",
+        "Skilled in developing hybrid mobile apps and cross-platform solutions using modern frameworks. Delivering seamless experiences across iOS and Android.",
+      skills: ["React Native", "Flutter", "Firebase", "App Store", "Play Store"],
     },
   ];
 
@@ -51,17 +57,33 @@ const Expertise = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
               >
-                <Card className="bg-card border-border hover:border-primary/50 transition-all duration-300 group hover:scale-105 h-full">
-                  <CardHeader>
-                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                      <Icon className="text-primary" size={24} />
+                <Card className="bg-gradient-to-br from-card to-card/50 border-border hover:border-primary/50 transition-all duration-300 group hover:scale-105 hover:shadow-xl hover:shadow-primary/5 h-full relative overflow-hidden">
+                  {/* Decorative gradient */}
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full blur-3xl group-hover:bg-primary/10 transition-colors" />
+                  
+                  <CardHeader className="relative z-10">
+                    <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center mb-4 group-hover:from-primary/30 group-hover:to-accent/30 transition-all group-hover:scale-110 shadow-lg shadow-primary/20">
+                      <Icon className="text-primary" size={28} />
                     </div>
-                    <CardTitle className="text-xl mb-2">{item.title}</CardTitle>
+                    <div className="mb-2">
+                      <div className="text-xs font-mono text-primary mb-1">{item.subtitle}</div>
+                      <CardTitle className="text-2xl mb-2">{item.title}</CardTitle>
+                    </div>
                   </CardHeader>
-                  <CardContent>
-                    <CardDescription className="text-muted-foreground leading-relaxed">
+                  <CardContent className="relative z-10">
+                    <CardDescription className="text-muted-foreground leading-relaxed mb-4">
                       {item.description}
                     </CardDescription>
+                    <div className="flex flex-wrap gap-2 mt-4">
+                      {item.skills.map((skill) => (
+                        <span
+                          key={skill}
+                          className="px-2 py-1 text-xs font-mono bg-primary/5 text-primary rounded border border-primary/10"
+                        >
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
                   </CardContent>
                 </Card>
               </motion.div>

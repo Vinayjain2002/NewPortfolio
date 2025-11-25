@@ -17,7 +17,8 @@ const Navigation = () => {
     { number: "01", label: "home", href: "#home" },
     { number: "02", label: "expertise", href: "#expertise" },
     { number: "03", label: "work", href: "#work" },
-    { number: "04", label: "contact", href: "#contact" },
+    { number: "04", label: "experience", href: "#experience" },
+    { number: "05", label: "contact", href: "#contact" },
   ];
 
   return (
