@@ -1,11 +1,25 @@
 import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
+import hero3d from "@/assets/hero-3d.png";
 
 const Hero = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Animated background elements */}
+      {/* Hero background image */}
       <div className="absolute inset-0 overflow-hidden">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 0.6 }}
+          transition={{ duration: 1 }}
+          className="absolute inset-0"
+        >
+          <img 
+            src={hero3d} 
+            alt="3D geometric background" 
+            className="w-full h-full object-cover animate-float"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/30 to-background" />
+        </motion.div>
         <motion.div
           className="absolute top-1/4 right-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl"
           animate={{

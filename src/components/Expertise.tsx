@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Code2, Palette, Smartphone } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import codeIllustration from "@/assets/code-illustration.png";
 
 const Expertise = () => {
   const expertiseItems = [
@@ -69,11 +70,28 @@ const Expertise = () => {
         </div>
 
         <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="max-w-4xl mx-auto mt-12"
+        >
+          <div className="relative rounded-xl overflow-hidden border border-border bg-card">
+            <img 
+              src={codeIllustration} 
+              alt="Code editor with Hello World" 
+              className="w-full h-auto"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
+          </div>
+        </motion.div>
+
+        <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="max-w-3xl mx-auto"
+          transition={{ duration: 0.6, delay: 0.6 }}
+          className="max-w-3xl mx-auto mt-12"
         >
           <blockquote className="border-l-4 border-primary pl-6 py-4">
             <p className="text-xl md:text-2xl text-muted-foreground italic mb-2">
