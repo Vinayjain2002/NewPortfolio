@@ -1,14 +1,12 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import projectEcommerce from "@/assets/project-ecommerce.png";
-import projectTravel from "@/assets/project-travel.png";
-import projectHotel from "@/assets/projectHotel.png";
-import projectWMS from "@/assets/projectWMS.png";
-import projectDaycare from "@/assets/projectDaycare.png";
-import projectStream from "@/assets/projectStream.png";
+import CWC from "../assets/CWC.png";
+import MyDayCare   from "../assets/MyDayCare.png";
+import Backend from "../assets/backend.png";
+import SmartStay from "../assets/HotelBooking.png";
+import DrawSurus from "../assets/Drawsurus.png";
 
-import { link } from "fs";
 
 const Work = () => {
 const projects = [ 
@@ -16,46 +14,38 @@ const projects = [
     title: "Warehouse Management System",
     description: "Government WMS for Haryana integrating OCR and FastTag to automate vehicle identification, gate entries, and weight tracking with real-time alerts and reporting.",
     tags: ["Node.js", "Python", "OCR", "FastTag", "Real-time Alerts"],
-    image: projectWMS,
+    image: CWC,
     link: "https://cwcgate.rsintegrators.in/"
   },
   {
     title: "MyDayCare - Daycare Management Platform",
     description: "Full-stack daycare management web and mobile app for Reliable PBX with parent portals, attendance tracking, and real-time notifications using Capacitor for cross-platform deployment.",
     tags: ["React", "Node.js", "Capacitor", "Firebase", "MongoDB"],
-    image: projectDaycare,
+    image: MyDayCare,
     link: "https://my-day-care-private.vercel.app/"
   },
   {
     title: "StreamSync - Video Streaming Platform",
     description: "Scalable video streaming backend with AWS S3, RabbitMQ, Docker, and Kubernetes using HLS protocol. Features Elasticsearch for video search and optimized bandwidth usage.",
     tags: ["Node.js", "AWS", "RabbitMQ", "Docker", "Kubernetes", "Elasticsearch"],
-    image: projectStream,
-    link:""
+    image: Backend,
+    link:"https://github.com/Vinayjain2002/VideoStreamingBackend"
   },
   {
     title: "Stay Smart - Hotel Booking App",
     description: "MERN-based hotel booking application using GraphQL for efficient data fetching. Features filtered search, booking history, and admin dashboard for hotel and room management.",
     tags: ["React", "Node.js", "MongoDB", "GraphQL", "Express"],
-    image: projectHotel,
-    link: ""
+    image: SmartStay,
+    link: "https://hotel-booking-ashy-mu.vercel.app/"
   },
   {
-    title: "PeerPoint - Real-time Chat Application",
-    description: "Real-time chat application using MERN stack and Socket.io with secure private chats, group discussions, and instant notifications for seamless communication.",
-    tags: ["React", "Socket.IO", "Redux", "Node.js", "MongoDB"],
-    image: projectHotel,
-    link: " "
-  },
-  {
-    title: "Infinity - Event Discovery Platform",
-    description: "Hackathon and bootcamp discovery platform with Redux state management and MySQL for scalable queries, centralizing college fests and tech events for students.",
-    tags: ["React", "Redux", "MySQL", "Node.js"],
-    image: projectHotel,
-    link: ""
+    title: "Drawsurus - Multiplayer Drawing & Guessing Platform",
+    description: "Real-time multiplayer drawing game platform where players take turns drawing prompts while others guess. Features WebSocket-based gameplay, private rooms, custom word lists, and live scoring system.",
+    tags: ["React", "Redux", "WebSocket", "Node.js", "Socket.IO"],
+    image: DrawSurus ,
+    link: "https://drawsurus-frontend.vercel.app/"
   },
 ];
-
   return (
     <section id="work" className="py-24 relative">
       <div className="container mx-auto px-6">
