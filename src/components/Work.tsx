@@ -94,13 +94,14 @@ const projects = [
                     <div className="flex gap-2">
                       <a
                         href={project.github}
+                        target="_blank"
                         className="text-muted-foreground hover:text-primary transition-colors"
                         aria-label="View on GitHub"
                       >
                         <Github size={18} />
                       </a>
                       <a
-                        href={project.link}
+                        href={project.link} target="_blank"
                         className="text-muted-foreground hover:text-primary transition-colors"
                         aria-label="View live project"
                       >
