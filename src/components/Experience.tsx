@@ -3,25 +3,25 @@ import { Briefcase } from "lucide-react";
 
 const Experience = () => {
   const experiences = [
-    {
-      role: "Software Developer",
-      company: "Samriddhi Automations Pvt Ltd",
-      period: "Jan 2025 - Present",
-      location: "Noida, India",
-      website: "samriddhiautomations.com",
-      description:
-        "Building backend infrastructure for Haryana Government's Warehouse Management System, integrating OCR and FastTag for automated vehicle identification and weight tracking. Developed real-time alert and reporting system that reduced manual data entry by 70% and improved processing accuracy by 95%.",
-      tags: ["Node.js", "Python", "OCR", "FastTag", "Real-time Systems"],
-    },
-    {
+     {
       role: "Full Stack Developer",
       company: "Reliable PBX",
-      period: "2024 - Present",
+      period: "June 2025 - Present",
       location: "Remote, USA",
-      website: "reliablepbx.com",
+      website: "https://reliablepbx.com",
       description:
         "Developed full-stack daycare management platform with web and mobile applications using MERN stack and Capacitor. Built real-time chat and communication system for parent-teacher interactions with push notifications, attendance tracking, and administrative dashboards.",
       tags: ["React", "Node.js", "Capacitor", "Firebase", "MongoDB"],
+    },
+    {
+      role: "Software Developer",
+      company: "Samriddhi Automations Pvt Ltd",
+      period: "Oct 2024 - May 2025",
+      location: "Noida, India",
+      website: "https://sparshsecuritech.com/",
+      description:
+        "Building backend infrastructure for Haryana Government's Warehouse Management System, integrating OCR and FastTag for automated vehicle identification and weight tracking. Developed real-time alert and reporting system that reduced manual data entry by 70% and improved processing accuracy by 95%.",
+      tags: ["Node.js", "Python", "OCR", "FastTag", "Real-time Systems"],
     },
     {
       role: "Software Developer",
