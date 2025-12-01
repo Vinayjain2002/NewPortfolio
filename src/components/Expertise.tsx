@@ -5,30 +5,31 @@ import codeIllustration from "@/assets/code-illustration.png";
 
 const Expertise = () => {
   const expertiseItems = [
-    {
-      icon: Code2,
-      title: "Software Development",
-      subtitle: "Full Stack Development",
-      description:
-        "Experienced in both functional and OOP: JavaScript, TypeScript, Python, and modern frameworks. Building scalable applications with clean architecture.",
-      skills: ["JavaScript", "TypeScript", "Python", "Node.js", "PostgreSQL"],
-    },
-    {
-      icon: Palette,
-      title: "Frontend Development",
-      subtitle: "React, NextJS",
-      description:
-        "Passionate about UI/UX. Over 5 years of development experience in HTML, CSS, JS, React and NextJS frameworks. Creating responsive and accessible interfaces.",
-      skills: ["React", "Next.js", "TailwindCSS", "Framer Motion", "HTML/CSS"],
-    },
-    {
-      icon: Smartphone,
-      title: "Mobile Development",
-      subtitle: "Cross-Platform Apps",
-      description:
-        "Skilled in developing hybrid mobile apps and cross-platform solutions using modern frameworks. Delivering seamless experiences across iOS and Android.",
-      skills: ["React Native", "Flutter", "Firebase", "App Store", "Play Store"],
-    },
+{ 
+  icon: Code2,
+  title: "Software Development",
+  subtitle: "C++ & System Programming",
+  description:
+    "Building high-performance systems and microservices using C++ and Python. Experience with CLI tools, automation scripts, and interfacing between C++ microservices and Python applications for real-time configuration and monitoring.",
+  skills: ["C++", "Python", "System Design", "CLI Tools"],
+},
+{
+  icon: Palette,
+  title: "Full Stack & DevOps",
+  subtitle: "MERN Stack & Cloud Infrastructure",
+  description:
+    "Developing scalable web applications with MERN stack, GraphQL, and real-time features. Proficient in containerization, orchestration, and CI/CD pipelines for seamless deployment and high availability.",
+  skills: ["Node.js", "React", "MongoDB", "Docker", "Kubernetes", "AWS", "Jenkins"],
+},
+{
+  icon: Smartphone,
+  title: "Mobile Development",
+  subtitle: "Capacitor & Flutter",
+  description:
+    "Building cross-platform mobile applications using Capacitor and Flutter with Node.js backends. Integrating Firebase for real-time features and deploying production-ready apps to iOS and Android platforms.",
+  skills: ["Capacitor", "Flutter", "Firebase", "Node.js", "Cross-Platform"],
+},
+
   ];
 
   return (

@@ -1,10 +1,15 @@
 import { motion } from "framer-motion";
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, Download } from "lucide-react";
 import hero3d from "@/assets/hero-3d.png";
+import { useDisclosure } from "@mantine/hooks";
+import { Button } from "@/components/ui/button";
 
 const Hero = () => {
+  const [opened, { open, close }] = useDisclosure(false);
+  const Info = { name: "Vinay Jain" };
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+   <>
+       <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Hero background image */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
@@ -65,8 +70,8 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight"
           >
-            <span className="text-foreground">YOUR</span>{" "}
-            <span className="text-gradient glow-text">NAME</span>
+            <span className="text-foreground">Vinay</span>{" "}
+            <span className="text-gradient glow-text">Jain</span>
           </motion.h1>
 
           <motion.p
@@ -75,26 +80,19 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-xl md:text-2xl text-muted-foreground mb-8 font-mono uppercase tracking-wider"
           >
-            Software Engineer, Front End & App Developer.
+            Software Engineer, Full Stack Developer.
           </motion.p>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4"
+            className="xs-mx:w-[90%] flex gap-3 items-center justify-center"
           >
-            <a
-              href="#work"
-              className="px-8 py-4 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-all hover:scale-105"
-            >
-              View My Work
-            </a>
-            <a
-              href="#contact"
-              className="px-8 py-4 border-2 border-primary text-primary rounded-lg font-medium hover:bg-primary/10 transition-all hover:scale-105"
-            >
-              Get In Touch
+            <Button onClick={open} className="focus-visible:!outline-none !text-bgColor !w-fit xs-mx:!w-[46%]" size="lg" variant="default">Check Resume</Button>
+            <a href="Resume.pdf" download={Info.name} className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-11 rounded-md px-8 !text-primaryColor !w-fit xs-mx:!w-[46%]">
+              Download
+              <Download size={20} />
             </a>
           </motion.div>
 
@@ -107,18 +105,30 @@ const Hero = () => {
             <span className="font-mono">AS FEATURED IN</span>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-            className="mt-6 flex items-center justify-center gap-8 flex-wrap opacity-50"
-          >
-            {["GitHub", "CodePen", "Dev.to", "Medium"].map((platform) => (
-              <span key={platform} className="font-mono text-sm hover:text-primary transition-colors cursor-pointer">
-                {platform}
-              </span>
-            ))}
-          </motion.div>
+            <motion.div 
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+              className="mt-6 flex items-center justify-center gap-8 flex-wrap opacity-50"
+            >
+              {[
+                { name: "GitHub", url: "https://github.com/yourusername" },
+                { name: "CodePen", url: "https://codepen.io/yourusername" },
+                { name: "Dev.to", url: "https://dev.to/yourusername" },
+                { name: "Medium", url: "https://medium.com/@yourusername" }
+              ].map((platform) => (
+                <a 
+                  key={platform.name} 
+                  href={platform.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-mono text-sm hover:text-primary transition-colors cursor-pointer"
+                >
+                  {platform.name}
+                </a>
+              ))}
+        </motion.div>
+
         </div>
       </div>
 
@@ -139,6 +149,10 @@ const Hero = () => {
         </motion.a>
       </motion.div>
     </section>
+    <div>
+      
+    </div>
+   </>
   );
 };
 

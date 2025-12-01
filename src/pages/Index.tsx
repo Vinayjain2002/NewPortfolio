@@ -3,9 +3,8 @@ import Hero from "@/components/Hero";
 import Expertise from "@/components/Expertise";
 import Work from "@/components/Work";
 import Experience from "@/components/Experience";
-import Availability from "@/components/Availability";
-import Contact from "@/components/Contact";
 import CustomCursor from "@/components/CustomCursor";
+import ContactDetails from "@/components/contactDetails";
 
 const Index = () => {
   return (
@@ -16,8 +15,9 @@ const Index = () => {
       <Expertise />
       <Work />
       <Experience />
-      <Availability />
-      <Contact />
+      {/* <Availability />
+      <Contact /> */}
+      <ContactDetails />
     </div>
   );
 };

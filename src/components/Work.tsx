@@ -3,36 +3,58 @@ import { ExternalLink, Github } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import projectEcommerce from "@/assets/project-ecommerce.png";
 import projectTravel from "@/assets/project-travel.png";
-import projectDashboard from "@/assets/project-dashboard.png";
-import projectChat from "@/assets/project-chat.png";
+import projectHotel from "@/assets/projectHotel.png";
+import projectWMS from "@/assets/projectWMS.png";
+import projectDaycare from "@/assets/projectDaycare.png";
+import projectStream from "@/assets/projectStream.png";
+
+import { link } from "fs";
 
 const Work = () => {
-  const projects = [
-    {
-      title: "E-Commerce Platform",
-      description: "Full-stack e-commerce solution with real-time inventory management and payment processing.",
-      tags: ["React", "Node.js", "PostgreSQL", "Stripe"],
-      image: projectEcommerce,
-    },
-    {
-      title: "Mobile Travel App",
-      description: "Cross-platform travel application with booking system and real-time notifications.",
-      tags: ["React Native", "TypeScript", "Firebase"],
-      image: projectTravel,
-    },
-    {
-      title: "Dashboard Analytics",
-      description: "Data visualization dashboard with interactive charts and real-time data updates.",
-      tags: ["Next.js", "D3.js", "TailwindCSS"],
-      image: projectDashboard,
-    },
-    {
-      title: "AI Chat Application",
-      description: "Real-time chat application with AI-powered response suggestions and sentiment analysis.",
-      tags: ["React", "WebSocket", "OpenAI"],
-      image: projectChat,
-    },
-  ];
+const projects = [ 
+  {
+    title: "Warehouse Management System",
+    description: "Government WMS for Haryana integrating OCR and FastTag to automate vehicle identification, gate entries, and weight tracking with real-time alerts and reporting.",
+    tags: ["Node.js", "Python", "OCR", "FastTag", "Real-time Alerts"],
+    image: projectWMS,
+    link: "https://cwcgate.rsintegrators.in/"
+  },
+  {
+    title: "MyDayCare - Daycare Management Platform",
+    description: "Full-stack daycare management web and mobile app for Reliable PBX with parent portals, attendance tracking, and real-time notifications using Capacitor for cross-platform deployment.",
+    tags: ["React", "Node.js", "Capacitor", "Firebase", "MongoDB"],
+    image: projectDaycare,
+    link: "https://my-day-care-private.vercel.app/"
+  },
+  {
+    title: "StreamSync - Video Streaming Platform",
+    description: "Scalable video streaming backend with AWS S3, RabbitMQ, Docker, and Kubernetes using HLS protocol. Features Elasticsearch for video search and optimized bandwidth usage.",
+    tags: ["Node.js", "AWS", "RabbitMQ", "Docker", "Kubernetes", "Elasticsearch"],
+    image: projectStream,
+    link:""
+  },
+  {
+    title: "Stay Smart - Hotel Booking App",
+    description: "MERN-based hotel booking application using GraphQL for efficient data fetching. Features filtered search, booking history, and admin dashboard for hotel and room management.",
+    tags: ["React", "Node.js", "MongoDB", "GraphQL", "Express"],
+    image: projectHotel,
+    link: ""
+  },
+  {
+    title: "PeerPoint - Real-time Chat Application",
+    description: "Real-time chat application using MERN stack and Socket.io with secure private chats, group discussions, and instant notifications for seamless communication.",
+    tags: ["React", "Socket.IO", "Redux", "Node.js", "MongoDB"],
+    image: projectHotel,
+    link: " "
+  },
+  {
+    title: "Infinity - Event Discovery Platform",
+    description: "Hackathon and bootcamp discovery platform with Redux state management and MySQL for scalable queries, centralizing college fests and tech events for students.",
+    tags: ["React", "Redux", "MySQL", "Node.js"],
+    image: projectHotel,
+    link: ""
+  },
+];
 
   return (
     <section id="work" className="py-24 relative">

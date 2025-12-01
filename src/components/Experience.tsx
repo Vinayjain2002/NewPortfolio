@@ -4,44 +4,44 @@ import { Briefcase } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
-      role: "Co-Founder",
-      company: "Tech Startup Ventures",
-      period: "2024 - Present",
-      location: "San Francisco, USA",
-      website: "techstartup.com",
+      role: "Software Developer",
+      company: "Samriddhi Automations Pvt Ltd",
+      period: "Jan 2025 - Present",
+      location: "Noida, India",
+      website: "samriddhiautomations.com",
       description:
-        "Co-founded a tech startup, managing end-to-end technical infrastructure, including server architecture, automation pipeline development, leadership of the web development team, and driving initiatives to optimize scalability.",
-      tags: ["DevOps", "CI/CD", "Kubernetes", "JS/TS", "NextJS"],
-    },
-    {
-      role: "Senior Lead Software Engineer",
-      company: "Digital Solutions Inc",
-      period: "2020 - 2024",
-      location: "Remote",
-      website: "digitalsolutions.com",
-      description:
-        "Led a frontend team to design and develop robust B2C and B2B solutions, utilizing React/Next.js for web applications, with a focus on responsive design, scalability, and enhanced user experience.",
-      tags: ["JS", "TS", "React", "NextJS", "TailwindCSS"],
+        "Building backend infrastructure for Haryana Government's Warehouse Management System, integrating OCR and FastTag for automated vehicle identification and weight tracking. Developed real-time alert and reporting system that reduced manual data entry by 70% and improved processing accuracy by 95%.",
+      tags: ["Node.js", "Python", "OCR", "FastTag", "Real-time Systems"],
     },
     {
       role: "Full Stack Developer",
-      company: "Creative Agency",
-      period: "2018 - 2020",
-      location: "New York, USA",
-      website: "creativeagency.com",
+      company: "Reliable PBX",
+      period: "2024 - Present",
+      location: "Remote, USA",
+      website: "reliablepbx.com",
       description:
-        "Developed the UI and UX ecosystem for multiple client projects using modular component structures with modern frameworks and best practices.",
-      tags: ["JS", "React", "Node.js", "MongoDB"],
+        "Developed full-stack daycare management platform with web and mobile applications using MERN stack and Capacitor. Built real-time chat and communication system for parent-teacher interactions with push notifications, attendance tracking, and administrative dashboards.",
+      tags: ["React", "Node.js", "Capacitor", "Firebase", "MongoDB"],
     },
     {
-      role: "Frontend Developer",
-      company: "Freelance",
-      period: "2017 - Present",
-      location: "Remote",
-      website: "upwork.com",
+      role: "Software Developer",
+      company: "Ciena India",
+      period: "Aug 2023 - Sept 2024",
+      location: "Gurugram, India",
+      website: "ciena.com",
       description:
-        "Top-rated developer specializing in Front-end technologies with a 100% job success rate and client satisfaction rating based on 150+ jobs.",
-      tags: ["JavaScript", "React", "HTML", "CSS", "Figma"],
+        "Developed Python automation scripts and CLI tools interfacing with C++ microservices for WaveRouter metro routing platform. Optimized API functionality reducing latency and improved test coverage from 58% to 92%. Built Flask-based tools for real-time configuration feedback and system health monitoring.",
+      tags: ["Python", "C++", "Flask", "CLI Tools", "System Automation"],
+    },
+    {
+      role: "Open Source Contributor",
+      company: "Personal Projects",
+      period: "2022 - Present",
+      location: "Remote",
+      website: "github.com/Vinayjain2002",
+      description:
+        "Built scalable systems including StreamSync (video streaming with AWS, Kubernetes), Stay Smart (hotel booking with GraphQL), and PeerPoint (real-time chat with Socket.IO). Focus on distributed architectures, microservices, and cloud infrastructure.",
+      tags: ["MERN", "AWS", "Docker", "Kubernetes", "GraphQL"],
     },
   ];
 

@@ -14,11 +14,11 @@ const Navigation = () => {
   }, []);
 
   const navItems = [
-    { number: "01", label: "home", href: "#home" },
-    { number: "02", label: "expertise", href: "#expertise" },
-    { number: "03", label: "work", href: "#work" },
-    { number: "04", label: "experience", href: "#experience" },
-    { number: "05", label: "contact", href: "#contact" },
+    { number: "01", label: "Home", href: "#home" },
+    { number: "02", label: "Expertise", href: "#expertise" },
+    { number: "03", label: "Work", href: "#work" },
+    { number: "04", label: "Experience", href: "#experience" },
+    { number: "05", label: "Contact", href: "#contact" },
   ];
 
   return (
@@ -36,7 +36,7 @@ const Navigation = () => {
             className="font-mono text-xl font-bold text-primary hover:text-primary/80 transition-colors"
             whileHover={{ scale: 1.05 }}
           >
-            YourName<span className="text-foreground">._</span>
+            Vinay Jain<span className="text-foreground">._</span>
           </motion.a>
 
           <div className="hidden md:flex items-center gap-8">
