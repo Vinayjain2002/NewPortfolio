@@ -9,6 +9,27 @@ import DrawSurus from "../assets/Drawsurus.png";
 
 
 const Work = () => {
+   const tagsToMap = {
+      "React": "https://react.dev/",
+      "Node.js": "https://nodejs.orgs/",
+      "MongoDB": "http://mongodb.com/",
+      "GraphQL": "https://graphql.com/",
+      "Express": "https://expressjs.com/",
+      "Capacitor": "https://capacitorjs.com/",
+      "Python": "https://docs.python.org/",
+      "OCR": "https://en.wikipedia.org/wiki/Optical_character_recognition",
+      "FastTag": "https://fasttag.org/",
+      "Real-time Alerts": "https://en.wikipedia.org/wiki/Real-time_computing",
+      "AWS": "https://aws.amazon.com/",
+      "RabbitMQ": "https://www.rabbitmq.com/",
+      "Docker": "https://www.docker.com/",
+      "Kubernetes": "https://kubernetes.io/",
+      "Elasticsearch": "https://www.elastic.co/elasticsearch/",
+      "Redux": "https://redux.js.org/",
+      "WebSocket": "https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API",
+      "Socket.IO": "https://socket.io/"
+    };
+
 const projects = [ 
   {
     title: "Warehouse Management System",
@@ -116,12 +137,14 @@ const projects = [
                 <CardContent>
                   <div className="flex flex-wrap gap-2">
                     {project.tags.map((tag) => (
-                      <span
+                      <a
                         key={tag}
+                        href={tagsToMap[tag]}
+                        target="_blank"
                         className="px-3 py-1 text-xs font-mono bg-primary/10 text-primary rounded-full"
                       >
                         {tag}
-                      </span>
+                      </a>
                     ))}
                   </div>
                 </CardContent>

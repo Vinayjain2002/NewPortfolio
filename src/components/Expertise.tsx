@@ -3,6 +3,34 @@ import { Code2, Palette, Smartphone } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import codeIllustration from "@/assets/code-illustration.png";
 
+  const tagsToMap = {
+      "React": "https://react.dev/",
+      "Node.js": "https://nodejs.orgs/",
+      "MongoDB": "http://mongodb.com/",
+      "GraphQL": "https://graphql.com/",
+      "Express": "https://expressjs.com/",
+      "Capacitor": "https://capacitorjs.com/",
+      "Python": "https://docs.python.org/",
+      "OCR": "https://en.wikipedia.org/wiki/Optical_character_recognition",
+      "FastTag": "https://fasttag.org/",
+      "Real-time Alerts": "https://en.wikipedia.org/wiki/Real-time_computing",
+      "AWS": "https://aws.amazon.com/",
+      "RabbitMQ": "https://www.rabbitmq.com/",
+      "Docker": "https://www.docker.com/",
+      "Kubernetes": "https://kubernetes.io/",
+      "Elasticsearch": "https://www.elastic.co/elasticsearch/",
+      "Redux": "https://redux.js.org/",
+      "WebSocket": "https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API",
+      "Socket.IO": "https://socket.io/",
+      "Jenkins": "https://www.jenkins.io/",
+      "Firebase": "https://firebase.google.com/",
+      "Flutter": "https://flutter.dev/",
+      "C++": "https://isocpp.org/",
+      "System Design": "https://en.wikipedia.org/wiki/System_design",
+      "CLI Tools": "https://en.wikipedia.org/wiki/Command-line_interface",
+      "Cross-Platform": "https://en.wikipedia.org/wiki/Cross-platform_software",
+  };
+
 const Expertise = () => {
   const expertiseItems = [
 { 
@@ -77,12 +105,14 @@ const Expertise = () => {
                     </CardDescription>
                     <div className="flex flex-wrap gap-2 mt-4">
                       {item.skills.map((skill) => (
-                        <span
+                        <a
                           key={skill}
+                          href={tagsToMap[skill]}
+                          target="_blank"
                           className="px-2 py-1 text-xs font-mono bg-primary/5 text-primary rounded border border-primary/10"
                         >
                           {skill}
-                        </span>
+                        </a>
                       ))}
                     </div>
                   </CardContent>
