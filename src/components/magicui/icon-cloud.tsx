@@ -80,7 +80,6 @@ export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
   return (
     // @ts-expect-error
     <Cloud {...cloudProps}>
-      {/* @ts-expect-error */}
       <>{renderedIcons}</>
     </Cloud>
   );

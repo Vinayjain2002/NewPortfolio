@@ -3,13 +3,13 @@ import { ArrowDown, Download } from "lucide-react";
 import hero3d from "@/assets/hero-3d.png";
 import { useDisclosure } from "@mantine/hooks";
 import { Button } from "@/components/ui/button";
+import ResumeViewer from "./ResumeViewer";
 
 const Hero = () => {
   const [opened, { open, close }] = useDisclosure(false);
   const Info = { name: "Vinay Jain" };
   return (
-   <>
-       <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Hero background image */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
@@ -148,11 +148,8 @@ const Hero = () => {
           <ArrowDown size={20} />
         </motion.a>
       </motion.div>
+      {/* <ResumeViewer opened={opened} close={close} /> */}
     </section>
-    <div>
-      
-    </div>
-   </>
   );
 };
 
