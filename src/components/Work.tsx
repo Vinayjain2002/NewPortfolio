@@ -15,37 +15,43 @@ const projects = [
     description: "Government WMS for Haryana integrating OCR and FastTag to automate vehicle identification, gate entries, and weight tracking with real-time alerts and reporting.",
     tags: ["Node.js", "Python", "OCR", "FastTag", "Real-time Alerts"],
     image: CWC,
-    link: "https://cwcgate.rsintegrators.in/"
+    link: "https://cwcgate.rsintegrators.in/",
+    github: ""
   },
   {
     title: "MyDayCare - Daycare Management Platform",
     description: "Full-stack daycare management web and mobile app for Reliable PBX with parent portals, attendance tracking, and real-time notifications using Capacitor for cross-platform deployment.",
     tags: ["React", "Node.js", "Capacitor", "Firebase", "MongoDB"],
     image: MyDayCare,
-    link: "https://my-day-care-private.vercel.app/"
+    link: "https://my-day-care-private.vercel.app/",
+    github: "https://github.com/Vinayjain2002/MyDayCarePrivate/"
   },
   {
     title: "StreamSync - Video Streaming Platform",
     description: "Scalable video streaming backend with AWS S3, RabbitMQ, Docker, and Kubernetes using HLS protocol. Features Elasticsearch for video search and optimized bandwidth usage.",
     tags: ["Node.js", "AWS", "RabbitMQ", "Docker", "Kubernetes", "Elasticsearch"],
     image: Backend,
-    link:"https://github.com/Vinayjain2002/VideoStreamingBackend"
+    link:"https://github.com/Vinayjain2002/VideoStreamingBackend",
+    github: "https://github.com/Vinayjain2002/VideoStreamingBackend"
   },
   {
     title: "Stay Smart - Hotel Booking App",
     description: "MERN-based hotel booking application using GraphQL for efficient data fetching. Features filtered search, booking history, and admin dashboard for hotel and room management.",
     tags: ["React", "Node.js", "MongoDB", "GraphQL", "Express"],
     image: SmartStay,
-    link: "https://hotel-booking-ashy-mu.vercel.app/"
+    link: "https://hotel-booking-ashy-mu.vercel.app/",
+    github: "https://github.com/Vinayjain2002/Hotel-Booking"
   },
   {
     title: "Drawsurus - Multiplayer Drawing & Guessing Platform",
     description: "Real-time multiplayer drawing game platform where players take turns drawing prompts while others guess. Features WebSocket-based gameplay, private rooms, custom word lists, and live scoring system.",
     tags: ["React", "Redux", "WebSocket", "Node.js", "Socket.IO"],
     image: DrawSurus ,
-    link: "https://drawsurus-frontend.vercel.app/"
+    link: "https://drawsurus-frontend.vercel.app/",
+    github: "https://github.com/Vinayjain2002/drawsurusFrontend"
   },
 ];
+
   return (
     <section id="work" className="py-24 relative">
       <div className="container mx-auto px-6">
@@ -87,14 +93,14 @@ const projects = [
                     {project.title}
                     <div className="flex gap-2">
                       <a
-                        href="#"
+                        href={project.github}
                         className="text-muted-foreground hover:text-primary transition-colors"
                         aria-label="View on GitHub"
                       >
                         <Github size={18} />
                       </a>
                       <a
-                        href="#"
+                        href={project.link}
                         className="text-muted-foreground hover:text-primary transition-colors"
                         aria-label="View live project"
                       >
