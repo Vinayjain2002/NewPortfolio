@@ -113,10 +113,10 @@ const Hero = () => {
                   className="mt-6 flex items-center justify-center gap-8 flex-wrap opacity-50"
                 >
                   {[
-                    { name: "GitHub", url: "https://github.com/yourusername" },
-                    { name: "CodePen", url: "https://codepen.io/yourusername" },
-                    { name: "Dev.to", url: "https://dev.to/yourusername" },
-                    { name: "Medium", url: "https://medium.com/@yourusername" }
+                    { name: "GitHub", url: "https://github.com/vinayjain2002" },
+                    { name: "LinkedIn", url: "https://www.linkedin.com/in/er-vinayjain/" }
+                   
+
                   ].map((platform) => (
                     <a 
                       key={platform.name} 
